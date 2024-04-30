@@ -6,9 +6,9 @@ const resetBtn = document.querySelector('.reset');
 
 function checkNegativeOrPositive () {
     if (count > 0) {
-        countEl.style.color = "green";
+        countEl.style.color = "#00FF00";
     } else if (count < 0) {
-        countEl.style.color = "red";
+        countEl.style.color = "#FF0000";
     } else {
         countEl.style.color = "#161616";
     }

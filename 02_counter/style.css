@@ -9,7 +9,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
     font-family: sans-serif;
 }
 
@@ -19,7 +19,7 @@ h1 {
 }
 
 #count {
-    font-size: 3rem;
+    font-size: 5rem;
     color: #161616;
 }
 
