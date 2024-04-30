@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title h1 {
+    font-size: 3rem;
+    color: #0e0e20;
+    text-transform: capitalize;
+}
+
+.title .underline {
+    width: 70px;
+    border-bottom: 5px solid #7474f8;
+}
+
+.review {
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.11);
+    padding: 20px 30px;
+    border-radius: 10px;
+}
+
+.review:hover {
+    box-shadow: 1px 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.author {
+    font-size: 20px;
+    color: #2e2e2e;
+    text-align: center;
+    margin-top: 24px;
+}
+
+.job-title {
+    font-size: 1rem;
+    color: #7474f8;
+    margin-top: 7px;
+}
+
+.comment {
+    color: #646464;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+.img-container {
+    width: 140px;
+    height: 140px;
+    position: relative;
+}
+
+.img-container::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #7474f8;
+    position: absolute;
+    top: -0.25rem;
+    right: -0.5rem;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.img-container::after {
+    font-size: 40px;
+    font-weight: 900;
+    content: "\201D";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    transform: translateY(25%);
+    background: #7474f8;
+    color: #e3e3e3;
+}
+
+.img-container img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    z-index: 2;
+}
+
+.prev-btn-container {
+    margin-top: 7px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.prev-btn-container .btn {
+    font-size: 26px;
+    color: #7474f8;
+    border: none;
+    background-color: transparent;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.surprise-btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.surprise-btn {
+    color: #7474f8;
+    background-color: transparent;
+    padding: 7px 10px;
+    border-radius: 2px;
+    border: 2px solid #7474f8;
+    cursor: pointer;
+}
