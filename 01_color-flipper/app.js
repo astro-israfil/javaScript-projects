@@ -16,7 +16,6 @@ function setBackgroundColor () {
     const bgColor = randomColorSelector(colors);
     document.body.style.backgroundColor = bgColor;
     colorCode.textContent = bgColor;
-
 }
 
 colorSwitcherBtn.addEventListener("click", setBackgroundColor);
